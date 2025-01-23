@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heloo 1 </title>
+</head>
+<body>
+    <h1>hello 1</h1>
+    <button id="stop">Stop</button></body>
+    <button id="start">Start</button>
+</body>
+<script>
+    const sayDate = function(){
+        console.log(" hellooooo");
+        //console.log(Date.now().toLocaleString());
+        
+    }
+
+    constIntervalId = setInterval(sayDate,2000,"helooooooooo")
+    //clearInterval(constIntervalId)
+    const start = ''
+    const startPrint = function(){
+        start = setInterval(function(){
+            console.log("kjhjh");
+            
+        },2000)
+    }
+
+    const stopPrint = function(){
+        clearInterval(start)
+    }
+
+    document.querySelector('#start').addEventListener('click',startPrint)
+    document.querySelector('#stop').addEventListener('click',stopPrint)
+
+</script>
+</html>
